@@ -1,0 +1,97 @@
+body{
+    background: rgb(18,14,82);
+    background: linear-gradient(90deg, rgba(18,14,82,1) 0%, rgba(174,38,176,1) 65%, rgba(131,40,186,1) 100%);
+}
+h1{
+    font-weight: 600;
+    color: rgb(47, 1, 65);
+    font-family: 'Times New Roman', Times, serif; /* Fuente Times New Roman */
+    font-size: 60px; /* Tamaño de fuente grande */
+    text-align: center;
+}
+.table {
+    margin: auto;    
+    border-collapse: separate; /* Evita que las celdas se fusionen */
+    border-spacing: 3px; /* Espaciado de 3px entre las celdas */
+    background-color: #c26d62; /* Color de fondo del tablero */
+      
+}
+
+.cell {
+    border: 1px solid black; /* Color negro para las líneas de cada celda */
+    background-color: #7a27a0; /* Color de fondo de las celdas */
+    
+    
+}
+
+tr, td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    border: 4px;
+}
+
+.table tr,
+.table td {
+    padding: 10px;
+}
+
+td {
+    border: 2px solid;
+    font-weight: 600;
+    color: rgb(117, 98, 223);
+    font-family: 'Times New Roman', Times, serif; /* Fuente Times New Roman */
+    font-size: 60px; /* Tamaño de fuente grande */
+    text-align: center; /* Centrar texto dentro de las celdas */
+    width: 100px; /* Ancho fijo de cada celda */
+    height: 100px; /* Alto fijo de cada celda */
+    vertical-align: middle; /* Centrar verticalmente el contenido */
+    
+}
+  
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 15px;
+    border: 7px;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ajustar al ancho del contenedor */
+    height: 100%; /* Ajustar al alto del contenedor */
+}
+
+@media (max-width: 768px) {
+.video-container iframe, .video-container object, .video-container embed {
+    width: 100%; /* Ajustar al ancho del contenedor en dispositivos pequeños */
+    height: 100%; /* Ajustar al alto del contenedor en dispositivos pequeños */
+}}
+
+.container {
+    text-align: center; /* Centrar contenido dentro del contenedor */
+}
+
+.btn-reiniciar {
+    margin-top: 20px; /* Espacio encima del botón */
+    font-family: 'Times New Roman', Times, serif; /* Fuente Times New Roman */
+    font-size: 34px; 
+    font-weight: bold; /* Texto en negrita */
+    padding: 20px 30px; /* Aumentar el padding para hacer el botón más grande */
+    background-color: rgb(115, 26, 138) !important;
+    border-radius: 25px;
+  }
+.btn-reiniciar:hover{
+    padding: 25px 35px;
+    transition: 0.5s;
+}
+/*.table-bordered {
+    border: 2px solid black; /* Color negro para las líneas del tablero 
+}*/
+
