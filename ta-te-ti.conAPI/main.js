@@ -54,13 +54,17 @@ function handleClick(event) {
     event.target.textContent = currentPlayer;
 
     if (checkWin()) {
+      audioGanador();
       alert(`¡${currentPlayer} ha ganado!`);
     } else {
       currentPlayer = currentPlayer == "X" ? "O" : "X";
     }
   });
 }
-
+function audioGanador(){
+  let audio = new Audio('./sonidos/Efecto de Sonido Victoria.mp3');
+  audio.play();
+}
 function checkWin() {
   const winConditions = [
     [0, 1, 2],
