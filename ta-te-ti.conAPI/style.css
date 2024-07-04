@@ -14,8 +14,8 @@ h1{
     border-collapse: separate; /* Evita que las celdas se fusionen */
     border-spacing: 3px; /* Espaciado de 3px entre las celdas */
     background-color: #c26d62; /* Color de fondo del tablero */
-    width: 550px;
-    height: 550px;
+    width: 40%;
+    height: 70%;
 }
 
 .cell {
