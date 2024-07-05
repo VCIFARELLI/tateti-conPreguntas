@@ -92,8 +92,4 @@ function reiniciarJuego() {
 }
 document.getElementById('reiniciar').addEventListener('click', reiniciarJuego);
 
-// Menu toggle
-document.getElementById('menu-icon').addEventListener('click', function() {
-  var menu = document.getElementById('menu');
-  menu.classList.toggle('show');
-});
+
